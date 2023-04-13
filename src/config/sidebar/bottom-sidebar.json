@@ -1,0 +1,13 @@
+[
+    {
+        "label": "Docs",
+        "href": "",
+        "external": true,
+        "icon": "bi bi-file-earmark-code"
+    }, {
+        "label": "Settings",
+        "href": "",
+        "external": true,
+        "icon": "bi bi-braces"
+    }
+]

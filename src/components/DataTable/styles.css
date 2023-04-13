@@ -1,0 +1,31 @@
+.d-table {
+
+}
+.d-table-head {
+    background: var(--d-primary-color);
+}
+
+.d-table-head th {
+    color: #fff;
+    background-color: unset!important;
+}
+
+.d-table-cell {
+    overflow-wrap: break-word;
+}
+
+.d-table tbody tr:nth-of-type(odd){
+    background-color: whitesmoke;
+}
+
+.d-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.d-table tbody tr td:first-child {
+    padding-left: 20px;
+}
+
+.d-font-bolder {
+    font-weight: bolder!important;
+}

@@ -1,0 +1,9 @@
+{
+    "theme": {
+        "sidebar": {
+            "background": "rgb(46,51,54)",
+            "color": "#fff",
+            "position": "left"
+        }
+    }
+}

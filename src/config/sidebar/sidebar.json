@@ -1,0 +1,26 @@
+[
+    {
+        "id": "home",
+        "icon": "bi bi-house",
+        "label": "Dashboard",
+        "href": "/"
+    },
+    {
+        "id": "inbox",
+        "icon": "bi bi-window-stack",
+        "label": "Inbox",
+        "href": "/inbox"
+    },
+    {
+        "id": "users",
+        "icon": "bi bi-pc-display-horizontal",
+        "label": "Users",
+        "href": "/users"
+    },
+    {
+        "id": "users",
+        "icon": "bi bi-award-fill",
+        "label": "Users",
+        "href": "/users"
+    }
+]
