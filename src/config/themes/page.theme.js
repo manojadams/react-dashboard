@@ -33,11 +33,11 @@ export const ColorsStyles = {
 const PAGE_THEME = createTheme({
     palette: {
         primary: {
-            main: "#673ab7"
+            main: "#58355E"
         }
     },
     typography: {
-        fontFamily: "Poppins-Regular"
+        fontFamily: "Comfortaa"
     },
     components: {
         MuiTextField: {

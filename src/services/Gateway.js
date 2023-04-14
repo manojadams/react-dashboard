@@ -5,10 +5,10 @@ import { USER_INFO } from "../common/constants";
 class Gateway {
 
     static getConfig() {
-        const USER_API_KEY = this.getUserApiKey();
+        const USER_KEY = "demo";
         const config = {
             headers: {
-                "x-api-key": USER_API_KEY
+                "user-key": USER_KEY
             }
         }
         return config;
@@ -38,8 +38,6 @@ class Gateway {
     }
 
     static getUserClients(email) {
-        const finalUrl = REST_CONSTANTS.GET_USER_CLIENTS.replace("{EMAIL}", email);
-        return axios.get(finalUrl, this.getConfig());
     }
 
     static updateClient(client) {
@@ -51,8 +49,6 @@ class Gateway {
     }
 
     static getUserApps(email) {
-        const finalUrl = REST_CONSTANTS.GET_USER_APPS.replace("{EMAIL}", email);
-        return axios.get(finalUrl, this.getConfig());
     }
 
     static updateApp(app) {
@@ -84,8 +80,6 @@ class Gateway {
     }
 
     static getUserSupportRequest(email) {
-        const finalUrl = REST_CONSTANTS.GET_USER_SUPPORT_REQUEST.replace("{EMAIL}", email);
-        return axios.get(finalUrl, this.getConfig());
     }
 
     static updateSupportRequest(request) {
@@ -97,8 +91,6 @@ class Gateway {
     }
 
     static getUserSupportResponse(email) {
-        const finalUrl = REST_CONSTANTS.GET_USER_SUPPORT_RESPONSE.replace("{EMAIL}", email);
-        return axios.get(finalUrl, this.getConfig());
     }
 
     static getLicenses() {
@@ -106,8 +98,6 @@ class Gateway {
     }
 
     static getUserLicenses(email) {
-        const finalUrl = REST_CONSTANTS.GET_USER_LICENSES.replace("{EMAIL}", email);
-        return axios.get(finalUrl, this.getConfig());
     }
 
     static updateLicense(license) {
@@ -119,34 +109,20 @@ class Gateway {
      * @param {*} email 
      * @returns 
      */
-    static getUserInfo(email) {
-        const finalUrl = REST_CONSTANTS.GET_USER_INFO.replace("{EMAIL}", email);
-        return axios.get(finalUrl, this.getConfig());
+    static getUserInfo() {
+        return Promise.resolve({
+            username: "demo",
+            password: "demo"
+        });
     }
 
     static getUserStats() {
-        return axios.get(REST_CONSTANTS.GET_USER_STATS, this.getConfig());
     }
 
     static login(params, recaptcha_token) {
-        const payload = {
-            ...params,
-            recaptcha_token,
-        };
-        return axios.post(REST_CONSTANTS.PROXY_LOGIN, payload, this.getConfig());
-    }
-
-    static getFile(id) {
-        const finalUrl = REST_CONSTANTS.GET_FILE.replace("{ID}", id);
-        return axios.get(finalUrl, this.getConfig());
     }
 
     static contactSupport(body, recaptcha_token) {
-        const formData = {
-            ...body,
-            recaptcha_token
-        }
-        return axios.post(REST_CONSTANTS.PROXY_SUPPORT, formData, this.getConfig());
     }
 }
 

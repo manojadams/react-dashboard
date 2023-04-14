@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url("./assets/fonts/Comfortaa-VariableFont_wght.ttf");
+}
+
 .text-center {
     text-align: center;
+}
+
+body {
+    font-family: Comfortaa;
 }

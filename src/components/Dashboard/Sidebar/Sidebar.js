@@ -8,6 +8,7 @@ import UserProfile from "./UserProfile";
 import { useNavigate } from "react-router-dom";
 import "./sidebar.css";
 import { TABLE_THEME } from "../../../config/themes/dashboard.theme";
+import Logo from "../../Logo";
 
 function Sidebar(props) {
     const [sidebarConfig] = useState(config?.theme?.sidebar);
@@ -24,9 +25,9 @@ function Sidebar(props) {
                         }
                     }}
                     onClose={props.handleClose}>
-                    {/* <Logo className="p-16" onClick={() => {
+                    <Logo className="p-16" onClick={() => {
                         navigate("/");
-                    }} /> */}
+                    }} />
                     <Box sx={{width: 250}}>
                         <List className="sidebar-wrapper">
                             {

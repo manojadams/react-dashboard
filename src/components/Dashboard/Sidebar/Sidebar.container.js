@@ -7,15 +7,14 @@ import sidebar from "../../../states/sidebar";
 import Gateway from "../../../services/Gateway";
 import { useMediaQuery } from "@mui/material";
 import { useEffect } from "react";
+import sidebarItems from "./../../../config/sidebar/sidebar.json";
 
 const SidebarContainer = () => {
     const navigate = useNavigate();
     const path = useResolvedPath();
-    const role = useRecoilValue(userRole);
     const [userDetails, setUserDetails] = useRecoilState(user);
     const isSmallDevice = useMediaQuery('(max-width:600px)');
     const [sidebarState, setExpanded] = useRecoilState(sidebar);
-    const sidebarItems = Util.getSidebarItems(role);
 
     useEffect(() => {
         if (!isSmallDevice) {

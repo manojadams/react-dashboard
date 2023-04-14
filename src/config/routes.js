@@ -5,6 +5,7 @@ import LoginPage from "../pages/LoginPage";
 import SignupPage from "../pages/SignupPage";
 import DashboardPage from "../pages/DashboardPage/DashboardPage";
 import DashboardHome from "../pages/DashboardPage/Home";
+import { PAGE_ROUTES } from "../common/constants";
 
 const ROUTES = [
     {
@@ -20,19 +21,19 @@ const ROUTES = [
       Component: ContactUsPage
     },
     {
-      path: "login",
+      path: PAGE_ROUTES.LOGIN,
       Component: LoginPage
     },
     {
-      path: "sign-up",
+      path: PAGE_ROUTES.SIGN_UP,
       Component: SignupPage
     },
     {
-      path: "dashboard",
+      path: PAGE_ROUTES.DASHBOARD,
       Component: DashboardPage,
       children: [
         {
-          path: "home",
+          path: PAGE_ROUTES.HOME,
           Component: DashboardHome
         }
       ]

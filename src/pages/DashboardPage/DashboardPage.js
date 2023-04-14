@@ -11,10 +11,10 @@ const DashboardPage = () => {
     const _sidebar = useRecoilValue(sidebar);
     const [userDetails, setUserDetails] = useRecoilState(user);
     useEffect(() => {
-        Gateway.getUserInfo(userDetails.getEmail()).then(res => {
+        Gateway.getUserInfo().then(res => {
             setUserDetails({
                 ...userDetails,
-                info: res.data
+                info: res
             });
         });
     }, []);

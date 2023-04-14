@@ -1,0 +1,19 @@
+{
+    "menu": [{
+        "id": "home",
+        "label": "Home",
+        "href": "/"
+    }, {
+        "id": "dashboard",
+        "label": "Dashboard",
+        "href": "/login"
+    }, {
+        "id": "documentation",
+        "label": "Documentation",
+        "href": "/documentation"
+    }, {
+        "id": "contact-us",
+        "label": "Contact Us",
+        "href": "/contact-us"
+    }]
+}
