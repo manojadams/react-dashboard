@@ -23,6 +23,9 @@ const UL = styled.ul`
     flex-direction: row;
     justify-content: flex-end;
     gap: 16px;
+    a {
+        text-decoration: none;
+    }
 `;
 
 export default Menu;

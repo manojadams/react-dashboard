@@ -1,5 +1,5 @@
 # React Dashboard
-An extensible dashboard app for quickly building other applications on top of it.
+Build superfast dashboard apps. A sample.
 
 ## Steps to get started
 

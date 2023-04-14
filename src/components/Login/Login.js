@@ -13,7 +13,7 @@ const Login = (props) => {
                     e.stopPropagation();
                     const email = e.currentTarget.elements["email"];
                     const password = e.currentTarget.elements["password"];
-                    props.onLogin(email, password);
+                    props.onLogin(email.value, password.value);
                     return false;
                 }}>
                     <h2 className="text-center">Login</h2>

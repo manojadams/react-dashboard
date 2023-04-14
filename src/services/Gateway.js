@@ -119,7 +119,8 @@ class Gateway {
     static getUserStats() {
     }
 
-    static login(params, recaptcha_token) {
+    static login(username, pass) {
+        sessionStorage.setItem("username", username);
     }
 
     static contactSupport(body, recaptcha_token) {

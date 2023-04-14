@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 function Footer() {
     return (
     <footer>
-        <P>2022 @Copyright </P>
+        <P>2022 &copy;Copyright. M Labs </P>
     </footer>);
 }
 
