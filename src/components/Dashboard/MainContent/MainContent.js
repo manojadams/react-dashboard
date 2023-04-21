@@ -7,7 +7,7 @@ import Toolbar from "./Toolbar";
 const MainContent = () => {
     const userInfo = useRecoilValue(user);
     return (
-        <Wrapper>
+        <Wrapper className="main-content">
             <Toolbar user={userInfo} />
             <Outlet />
         </Wrapper>
@@ -15,10 +15,10 @@ const MainContent = () => {
 }
 
 const Wrapper = styled.div`
-    max-width: calc(100% - 250px);
     overflow: auto;
     background-color: #e9eaef;
-    // padding: 16px;
+    padding: 16px;
+    box-sizing: border-box;
 `;
 
 export default MainContent;

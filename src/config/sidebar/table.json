@@ -1,0 +1,19 @@
+{
+    "spacing": "6px",
+    "format": {
+        "timestamp": "DD/MM/YYYY hh:mm:ss"
+    },
+    "header": {
+        "background": "rgb(30,34,36)",
+        "color": "#fff"
+    },
+    "font": {
+        "size": "12"
+    },
+    "cell": {
+        "maxWidth": "280px",
+        "minWidth": "",
+        "width": "",
+        "align": ""
+    }
+}

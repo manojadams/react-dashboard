@@ -1,0 +1,32 @@
+[
+    {
+        "field": "password",
+        "headerName": "Old Password",
+        "metadata": {
+            "displayType": "password",
+            "validation": {
+                "required": true
+            }
+        }
+    },
+    {
+        "field": "new_password",
+        "headerName": "New Password",
+        "metadata": {
+            "displayType": "password",
+            "validation": {
+                "required": true
+            }
+        }
+    },
+    {
+        "field": "new_password_confirm",
+        "headerName": "Retype new password",
+        "metadata": {
+            "displayType": "password",
+            "validation": {
+                "required": true
+            }
+        }
+    }
+]

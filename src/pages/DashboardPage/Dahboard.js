@@ -28,6 +28,13 @@ function Dashboard() {
 }
 
 const Wrapper = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    .main-content {
+        flex-grow: 1;
+        max-width: ${props => props.expanded ? "calc(100% - 250px)" : "100%" };
+        height: 100vh;
+    }
 `;
 
 export default Dashboard;

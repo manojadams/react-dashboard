@@ -1,0 +1,24 @@
+[
+    {
+        "field": "name",
+        "headerName": "Name",
+        "metadata": {
+            "displayType": "label"
+        }
+    },
+    {
+        "field": "api_key",
+        "headerName": "API Key",
+        "metadata": {
+            "type": "text",
+            "prop": null
+        }
+    },
+    {
+        "field": "email",
+        "headerName": "Email",
+        "metadata": {
+            "type": "text"
+        }
+    }
+]

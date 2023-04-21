@@ -3,24 +3,24 @@
         "id": "home",
         "icon": "bi bi-house",
         "label": "Dashboard",
-        "href": "/"
+        "href": "/dashboard"
     },
     {
         "id": "inbox",
         "icon": "bi bi-window-stack",
         "label": "Inbox",
-        "href": "/inbox"
+        "href": "/dashboard/inbox"
     },
     {
         "id": "users",
         "icon": "bi bi-pc-display-horizontal",
         "label": "Users",
-        "href": "/users"
+        "href": "/dashboard/users"
     },
     {
-        "id": "users",
+        "id": "documentation",
         "icon": "bi bi-award-fill",
         "label": "Users",
-        "href": "/users"
+        "href": "/docs"
     }
 ]

@@ -3,6 +3,8 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { useNavigate } from "react-router-dom";
 import bottomSidebarItems from "../../../config/sidebar/bottom-sidebar.json";
+import ROUTES from "../../../config/routes";
+import { PAGE_ROUTES } from "../../../common/constants";
 
 const UserProfile = (props) => {
     const navigate = useNavigate();
@@ -52,7 +54,7 @@ const UserProfile = (props) => {
                             </span>
                         </div>
                         <div className="d-profile-actions">
-                            <div title="Settings" onClick={() => navigate("/edit-profile")}>
+                            <div title="Settings" onClick={() => navigate(PAGE_ROUTES.DASHBOARD_EDIT_PROFILE)}>
                                 <SettingsIcon />
                             </div>
                             <div title="Logout">

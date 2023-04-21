@@ -7,7 +7,7 @@ const router = createBrowserRouter(ROUTES, {
 });
 
 const App = () => {
-    return <RouterProvider router={router} fallbackElement={Loader} />
+    return <RouterProvider router={router} fallbackElement={<Loader />} />
 }
 
 export default App;

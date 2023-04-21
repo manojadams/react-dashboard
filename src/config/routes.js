@@ -1,4 +1,4 @@
-import DashboardHome from "../pages/DashboardPage/Home";
+// import DashboardHome from "../pages/DashboardPage/Home";
 import { PAGE_ROUTES } from "../common/constants";
 import ErrorBoundary from "../components/common/ErrorBoundary";
 import IndexPage from "../pages/IndexPage";
@@ -19,14 +19,14 @@ const ROUTES = [
             }; 
           }
         },
-        {
-          path: "about",
-          lazy: () => import("../pages/AboutPage")
-        },
-        {
-          path: "contact-us",
-          lazy: () => import("../pages/ContactUsPage")
-        },
+        // {
+        //   path: "about",
+        //   lazy: () => import("../pages/AboutPage")
+        // },
+        // {
+        //   path: "contact-us",
+        //   lazy: () => import("../pages/ContactUsPage")
+        // },
         {
           path: PAGE_ROUTES.LOGIN,
           async lazy() { 
@@ -36,10 +36,10 @@ const ROUTES = [
             }; 
           }
         },
-        {
-          path: PAGE_ROUTES.SIGN_UP,
-          lazy: () => import("../pages/SignupPage")
-        },
+        // {
+        //   path: PAGE_ROUTES.SIGN_UP,
+        //   lazy: () => import("../pages/SignupPage")
+        // },
         {
           path: PAGE_ROUTES.DASHBOARD,
           async lazy() { 
@@ -56,6 +56,15 @@ const ROUTES = [
                 return { 
                   Component: DashboardHome.default
                 }; 
+              }
+            },
+            {
+              path: PAGE_ROUTES.DASHBOARD_EDIT_PROFILE,
+              async lazy() {
+                const EditProfile = await import("../components/Dashboard/MainContent/EditProfile");
+                return {
+                  Component: EditProfile.default
+                }
               }
             }
           ]

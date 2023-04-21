@@ -5,7 +5,7 @@ export const user = atom({
     default: {
         isLoggedIn: () => {
             const userToken = sessionStorage.getItem(USER_INFO.TOKEN);
-            const userEmail = sessionStorage.getItem(USER_INFO.EMAIL);
+            const userEmail = sessionStorage.getItem(USER_INFO.NAME);
             return userToken && userEmail;
         },
         getEmail: () => {

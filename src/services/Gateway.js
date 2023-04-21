@@ -120,7 +120,8 @@ class Gateway {
     }
 
     static login(username, pass) {
-        sessionStorage.setItem("username", username);
+        sessionStorage.setItem(USER_INFO.TOKEN, pass);
+        sessionStorage.setItem(USER_INFO.NAME, username);
     }
 
     static contactSupport(body, recaptcha_token) {

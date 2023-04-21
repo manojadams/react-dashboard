@@ -1,0 +1,17 @@
+[{
+    "id": "inbox",
+    "label": "Inbox",
+    "icon": "bi bi-window-stack",
+    "href": "inbox",
+    "value": 0,
+    "role": "ALL",
+    "color": "#1E2224"
+}, {
+    "id": "users",
+    "label": "Users",
+    "icon": "bi bi-pc-display-horizontal",
+    "href": "users",
+    "value": 0,
+    "role": "ALL",
+    "color": "#1E2224"
+}]
